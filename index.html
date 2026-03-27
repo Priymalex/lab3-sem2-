@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <title>Lab 3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <Main>
+        <div id="content-box">
+            <fieldset>
+            <legend>Контракт</legend>
+        <form method="post" id="form">
+            <label for="FIO">ФИО:</label>
+            <input type="text" id="FIO" placeholder="Иванов Иван Иванович" name="FIO">
+            <label for="telep" >Телефон:</label>
+            <input type="tel" id="telep" placeholder="+7 (999) 999-39-78" name="telep">
+            <label for="mail">Электронная почта:</label>
+            <input type="email" id="mail" placeholder="yourmail@mail.ru" name="mail">
+            <label for="date">Дата рождения:</label>
+            <input type="date" id="date" name="date">
+            <label for="sex">Пол:
+                <input type="radio" name="sex" value="Male"><label>Мужской</label>
+                <input type="radio" name="sex" value="Female"><label>Женский</label>
+            </label>
+            <label for="language">Любимый язык программирования:</label>
+            <select id="language" name="language" multiple="multiple">
+                <option value="Go">Go</option>
+                <option value="Scala">Scala</option>
+                <option value="Prolog">Prolog</option>
+                <option value="Clojure">Clojure</option>
+                <option value="Haskel">Haskel</option>
+                <option value="Java">Java</option>
+                <option value="Python">Python</option>
+                <option value="PHP">PHP</option>
+                <option value="JavaScript">JavaScript</option>
+                <option value="C++">C++</option>
+                <option value="C">C</option>
+                <option value="Pascal">Pascal</option>
+            </select>
+            <textarea name="bio" id="biography" placeholder="Ваша биография"></textarea>
+            <label for="Agreement">С контрактом ознакомлен (а)<input type="checkbox" id="Agreement" name="Agreement"></label>
+            <button type="submit" id="formbutton">Отправить</button>
+        </form>
+        </fieldset>
+        </div>
+    </Main>
+</body>
+</html>

@@ -1,0 +1,10 @@
+
+
+#form{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    height: 50%;
+    margin: 5% 38% 25% 37%;
+}
+
