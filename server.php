@@ -70,7 +70,7 @@ try {
     $db->beginTransaction();
 
 
-    $stmt = $db->prepare("INSERT INTO Request (name, tel, email, dateborn, sex, bio, agree) 
+    $stmt = $db->prepare("INSERT INTO Frequest (name, tel, email, dateborn, sex, bio, agree) 
                           VALUES (:name, :tel, :email, :dateborn, :sex, :bio, :agree)");
     $stmt->execute([
         ':name' => $name,
@@ -84,8 +84,8 @@ try {
 
     $requestId = $db->lastInsertId();
 
-    $getLangId = $db->prepare("SELECT language_id FROM Language WHERE language_name = ?");
-    $insertConn = $db->prepare("INSERT INTO Connection (request_id, language_id) VALUES (?, ?)");
+    $getLangId = $db->prepare("SELECT language_id FROM LANGUAGES WHERE language_name = ?");
+    $insertConn = $db->prepare("INSERT INTO Connect (request_id, language_id) VALUES (?, ?)");
 
     foreach ($languages as $langName) {
         $getLangId->execute([$langName]);
