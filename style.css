@@ -116,7 +116,7 @@ label:has(input[type="checkbox"]) {
     background-color: #45a049;
 }
 
-/* Адаптивность */
+
 @media (max-width: 768px) {
     body {
         padding: 10px;
